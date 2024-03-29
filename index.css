@@ -4,7 +4,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media only screen and (min-width: 475px) {
+@media only screen and (min-width: 400px) {
   header {
     background-color: #f1f8fc;
     width: 100%;
