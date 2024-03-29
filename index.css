@@ -4,7 +4,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media only screen and (min-width: 475px) {
+@media only screen and (min-width: 400px) {
   header {
     background-color: #f1f8fc;
     width: 100%;
@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 40px;
   }
 
   .header__content {
@@ -63,7 +63,7 @@
 
   .header__rightCover {
     object-fit: contain;
-    height: 450px;
+    height: 360px;
   }
 }
 
@@ -348,7 +348,7 @@
 
   .header__title {
     font-weight: 700;
-    font-size: 70;
+    font-size: 70px;
     margin-bottom: 20px;
     text-align: start;
   }
@@ -373,6 +373,7 @@
     margin-top: -80px;
   }
   .header__rightCover {
-    width: 600px;
+    object-fit: contain;
+    height: 700px;
   }
 }
