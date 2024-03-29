@@ -1,0 +1,224 @@
+#contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 44px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px 149px;
+  margin-bottom: 35px;
+}
+
+.section__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+}
+
+.section__title > p {
+  line-height: 32px;
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+}
+
+.content > h1 {
+  margin-top: -15px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+form {
+  margin-top: -10px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.input__box {
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+  gap: 32px;
+}
+
+.input__field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+.input__field > label {
+  font-size: 21.3px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.input__field > input {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #5e3bee;
+  outline: none;
+  font-size: 21.3px;
+}
+
+.textarea-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+.textarea-field > label {
+  font-size: 21.3px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.textarea-field > textarea {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #5e3bee;
+  outline: none;
+  font-size: 21.3px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-size: 21.3px;
+  padding: 18px 42px;
+  cursor: pointer;
+  background: #5e3bee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 460px) {
+  #contact {
+    padding: 20px 20px;
+  }
+
+  .section__title > p {
+    line-height: 24px;
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+  }
+
+  .content > h1 {
+    margin-top: -15px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  form {
+    width: 400px;
+  }
+  .input__box {
+    flex-direction: column;
+  }
+
+  .input__field > label {
+    font-size: 18.3px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .input__field > input {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #5e3bee;
+    outline: none;
+    font-size: 18.3px;
+  }
+
+  button {
+    font-size: 18.3px;
+    padding: 14px 38px;
+    cursor: pointer;
+    background: #5e3bee;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  form {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .input__box {
+    flex-direction: row;
+  }
+
+  form {
+    width: 620px;
+  }
+
+  .input__box {
+    gap: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #contact {
+    padding: 20px 149px;
+  }
+  .section__title > p {
+    line-height: 32px;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+  }
+
+  .content > h1 {
+    margin-top: -15px;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  form {
+    width: 900px;
+  }
+
+  .input__box {
+    gap: 32px;
+  }
+  .input__field > label {
+    font-size: 21.3px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .input__field > input {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #5e3bee;
+    outline: none;
+    font-size: 21.3px;
+  }
+
+  button {
+    font-size: 21.3px;
+    padding: 18px 42px;
+    cursor: pointer;
+    background: #5e3bee;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
+}
