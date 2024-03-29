@@ -62,7 +62,7 @@ hr {
   gap: 42px;
 }
 
-@media screen and (min-width: 470px) {
+@media screen and (min-width: 400px) {
   #footer {
     box-sizing: border-box;
     width: 100%;
