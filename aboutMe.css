@@ -47,6 +47,7 @@
     align-items: center;
     height: 91vh;
     gap: 30px;
+    padding: 33px 30px;
   }
 
   .body__left {
@@ -105,6 +106,7 @@
     align-items: center;
     height: 91vh;
     gap: 30px;
+    padding: 33px 40px;
   }
 
   .body__left {
