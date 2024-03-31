@@ -26,25 +26,113 @@ a {
   border: 3px solid #5f3bee9d;
 }
 
-@media only screen and (min-width: 400px) {
+.nav__btn {
+  display: none;
+}
+
+@media only screen and (max-width: 399px) {
   nav {
     border-bottom: 1px solid rgb(235, 235, 235);
   }
 
   .nav__container {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 32px;
     align-items: center;
     padding: 18px;
-    margin-left: 15px;
     gap: 15px;
   }
-  .nav__left {
-    margin-right: 0px;
+
+  .nav__btn {
+    display: inline-block;
+    object-fit: contain;
+    height: 14px;
+    transition: transform 50ms;
   }
+
+  .nav__btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .nav__hide {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+    position: absolute;
+    top: 64px;
+    right: 10px;
+    flex-direction: column;
+    background: white;
+    padding: 13px 20px;
+    border-radius: 8px;
+    text-align: left;
+    gap: 13px;
+    height: fit-content;
+  }
+
   .nav__left > a {
-    margin-right: 26px;
+    font-size: small;
+  }
+
+  .nav__right > a {
+    padding: 3px;
+    color: #5e3bee;
+    border: 1px solid #5e3bee;
+    font-size: x-small;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 639px) {
+  nav {
+    border-bottom: 1px solid rgb(235, 235, 235);
+  }
+
+  .nav__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 32px;
+    align-items: center;
+    padding: 18px;
+    gap: 15px;
+  }
+
+  .nav__btn {
+    display: inline-block;
+    object-fit: contain;
+    height: 14px;
+    transition: transform 50ms;
+  }
+
+  .nav__btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .nav__hide {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+    position: absolute;
+    top: 64px;
+    right: 10px;
+    flex-direction: column;
+    background: white;
+    padding: 13px 20px;
+    border-radius: 8px;
+    text-align: left;
+    gap: 13px;
+    height: fit-content;
+  }
+
+  .nav__left > a {
     font-size: small;
   }
 
@@ -72,6 +160,7 @@ a {
   .nav__left {
     margin-right: 20px;
   }
+
   .nav__left > a {
     margin-right: 18px;
     font-size: small;

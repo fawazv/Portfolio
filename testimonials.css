@@ -81,7 +81,32 @@
   font-weight: 400px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 399px) {
+  #testimonials {
+    padding: 45px 45px;
+    gap: 40px;
+  }
+
+  .section__title > h4 {
+    font-size: 14px;
+  }
+
+  .section__title > h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+  }
+  .section__content {
+    width: 200px;
+  }
+
+  .active {
+    background-color: rgb(241, 241, 241);
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 639px) {
   #testimonials {
     padding: 45px 45px;
     gap: 40px;
@@ -99,6 +124,10 @@
   }
   .section__content {
     width: 240px;
+  }
+
+  .active {
+    background-color: rgb(241, 241, 241);
   }
 }
 

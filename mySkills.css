@@ -4,7 +4,67 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 399px) {
+  .section {
+    margin: 30px;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    margin-top: 30px;
+  }
+
+  .sectionTitle > h4 {
+    text-align: center;
+    font-size: small;
+    margin-bottom: 12px;
+  }
+
+  .sectionTitle > h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .sectionContents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionContent {
+    background-color: #f1f8fc;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .content__logo {
+    object-fit: contain;
+    height: 35px;
+    margin-bottom: 15px;
+  }
+
+  .content__title {
+    font-size: medium;
+    margin-bottom: 15px;
+  }
+
+  .content__list > li {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .active {
+    background-color: rgb(241, 241, 241);
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 639px) {
   .section {
     margin: 50px;
   }
@@ -58,9 +118,16 @@
     font-size: 14px;
     line-height: 23px;
   }
+
+  .active {
+    background-color: rgb(241, 241, 241);
+  }
 }
 
 @media only screen and (min-width: 640px) {
+  .section {
+    margin: 50px;
+  }
   .skills {
     display: flex;
     flex-direction: column;
@@ -90,9 +157,9 @@
   .sectionContent {
     width: 360px;
     background-color: #f1f8fc;
-    /* padding: 30px;
+    padding: 30px;
     padding-left: 100px;
-    padding-right: 100px; */
+    padding-right: 100px;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 20px;
@@ -173,10 +240,12 @@
 
 @media only screen and (min-width: 1024px) {
   .section {
-    height: 80vh;
+    height: 81vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -10px;
+    margin-bottom: 80px;
   }
   .skills {
     display: flex;
@@ -374,7 +443,7 @@
 
 @media only screen and (min-width: 1836px) {
   .section {
-    height: 80vh;
+    height: 100;
     display: flex;
     align-items: center;
     justify-content: center;
